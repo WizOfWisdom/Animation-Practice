@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Tailwind Animation Demo</title>
+</head>
+
+<body class="bg-slate-100 min-h-screen p-10">
+
+  <h1 class="text-4xl font-bold mb-10 text-center">
+    Real World Tailwind Animations
+  </h1>
+
+  <div class="grid md:grid-cols-2 gap-8">
+
+    <!-- SPIN -->
+    <div class="bg-white rounded-2xl p-6 shadow-lg">
+      <h2 class="text-xl font-semibold mb-4">Loading Spinner</h2>
+
+      <div class="flex items-center gap-4">
+        <div class="w-10 h-10 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
+
+        <p class="text-gray-600">
+          Used while fetching API data or submitting forms.
+        </p>
+      </div>
+    </div>
+
+    <!-- PING -->
+    <div class="bg-white rounded-2xl p-6 shadow-lg">
+      <h2 class="text-xl font-semibold mb-4">Live Notification</h2>
+
+      <div class="flex items-center gap-4">
+
+        <div class="relative">
+          <span class="absolute inline-flex h-4 w-4 rounded-full bg-red-400 opacity-75 animate-ping"></span>
+
+          <span class="relative inline-flex rounded-full h-4 w-4 bg-red-500"></span>
+        </div>
+
+        <p class="text-gray-600">
+          Used for live status, unread messages, or online users.
+        </p>
+      </div>
+    </div>
+
+    <!-- PULSE -->
+    <div class="bg-white rounded-2xl p-6 shadow-lg">
+      <h2 class="text-xl font-semibold mb-4">Skeleton Loader</h2>
+
+      <div class="space-y-3">
+        <div class="h-4 bg-gray-300 rounded animate-pulse"></div>
+        <div class="h-4 bg-gray-300 rounded w-5/6 animate-pulse"></div>
+        <div class="h-4 bg-gray-300 rounded w-4/6 animate-pulse"></div>
+      </div>
+
+      <p class="text-gray-600 mt-4">
+        Common while content is loading.
+      </p>
+    </div>
+
+    <!-- BOUNCE -->
+    <div class="bg-white rounded-2xl p-6 shadow-lg">
+      <h2 class="text-xl font-semibold mb-4">Scroll Down Hint</h2>
+
+      <div class="flex flex-col items-center">
+        <p class="text-gray-600 mb-3">
+          Bounce draws user attention.
+        </p>
+
+        <div class="text-4xl animate-bounce">
+          ↓
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

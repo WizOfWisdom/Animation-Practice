@@ -1,0 +1,1 @@
+Examples of where tailwind animation are mostly used in read world practice.
